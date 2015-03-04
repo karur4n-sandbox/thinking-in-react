@@ -1,0 +1,25 @@
+{
+  "name": "thinking-in-react",
+  "version": "0.0.1",
+  "description": "[Thinking in React | React](http://facebook.github.io/react/docs/thinking-in-react.html)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "watchify -o public/bundle.js -v -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "reactify": "^1.0.0",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
